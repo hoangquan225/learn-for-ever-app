@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo" /> <!-- Thay thế ic_login_logo bằng đường dẫn hoặc tên tài nguyên hình ảnh logo -->
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="Tên Đăng Nhập"
+        android:textColorHint="#325535"
+        android:textColor="#000000"/>
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="Email"
+        android:textColorHint="#325535"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="Tên Người Dùng"
+        android:textColorHint="#325535"
+        android:textColor="#000000"/>
+
+
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="Số Điện Thoại"
+        android:textColorHint="#325535"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/etlayerGioiTinh"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_margin="10dp"
+        android:hint="Giới tính:"
+        android:textColor="#000000"
+        android:textColorHint="#325535" />
+
+    <RadioGroup
+        android:id="@+id/radioGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="Chọn Giới Tính"
+        android:orientation="horizontal"
+        android:textColorHint="#325535"
+        android:textColor="#000000">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Nam"
+            android:tag="1"
+            android:textColorHint="#325535"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Nữ"
+            android:tag="2"
+            android:textColorHint="#325535"
+            android:textColor="#000000"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu"
+        android:textColorHint="#325535"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etRePassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:hint="Nhập Lại Mật khẩu"
+        android:textColorHint="#325535"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#325535"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã có tài khoản? "
+            android:textSize="16sp"/>
+
+
+        <Button
+            android:id="@+id/btnReLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/background"
+            android:text="Đăng nhập"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

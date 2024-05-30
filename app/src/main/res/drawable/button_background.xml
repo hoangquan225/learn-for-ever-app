@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true" android:color="@color/secondaryColor" /> <!-- Màu khi Button được nhấn -->
+    <item android:state_enabled="true" android:color="@color/secondaryColor" /> <!-- Màu mặc định khi Button không được nhấn -->
+    <item android:color="@color/secondaryColor" /> <!-- Màu khi Button không được bật -->>
+</selector>
