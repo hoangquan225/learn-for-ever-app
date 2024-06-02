@@ -23,8 +23,8 @@ public class ConfigApi {
                 .addInterceptor(getInterceptor())
                 .build();
         Retrofit retrofit = new Retrofit.Builder()
-//                .baseUrl("https://learn-for-ever-server.onrender.com/")
-                .baseUrl("http://10.144.14.10:3006/")
+                .baseUrl("https://learn-for-ever-server.onrender.com/")
+//                .baseUrl("http://10.144.14.10:3006/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();
